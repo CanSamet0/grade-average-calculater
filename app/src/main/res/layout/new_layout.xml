@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/newButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/delete_button_background"
+        android:text="@string/sil"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCredits"
+        app:layout_constraintStart_toEndOf="@+id/textViewCredits"
+        app:layout_constraintTop_toTopOf="@+id/textViewCredits" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewLetter"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLetter"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewCredits"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="@string/text_view_credits"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewLesson"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLesson" />
+
+    <TextView
+        android:id="@+id/textViewLetter"
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:text="@string/text_view_letter"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCredits"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCredits" />
+
+    <TextView
+        android:id="@+id/textViewLesson"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_view_lesson"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

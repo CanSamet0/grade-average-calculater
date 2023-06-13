@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculate Avarage For Notes</string>
+    <string name="ekle">ekle</string>
+    <string name="ders_ad_giriniz">Ders Adı Giriniz</string>
+    <string name="hespla">hespla</string>
+    <string name="sil">sil</string>
+    <string name="text_view_lesson">TextViewLesson</string>
+    <string name="text_view_letter">Text View Letter</string>
+    <string name="text_view_credits">Text View Credits</string>
+    <string name="g_r_yap">GİRİŞ YAP</string>
+</resources>

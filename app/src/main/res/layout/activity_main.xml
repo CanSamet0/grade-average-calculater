@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9AB30000">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/ders_ad_giriniz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:text="@string/ekle"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/autoEditText"
+            app:layout_constraintTop_toBottomOf="@+id/autoEditText" />
+
+        <Spinner
+            android:id="@+id/spinnerLetter"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/white"
+            android:entries="@array/credits"
+            app:layout_constraintStart_toStartOf="@+id/spinnerCredits"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCredits" />
+
+        <Spinner
+            android:id="@+id/spinnerCredits"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/white"
+            android:entries="@array/allNotes"
+            android:popupBackground="#B30000"
+            app:layout_constraintStart_toStartOf="@+id/autoEditText"
+            app:layout_constraintTop_toBottomOf="@+id/autoEditText" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rootLayout">
+        </LinearLayout>
+
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/delete_button_background"
+            android:onClick="calculateAverage"
+            android:text="@string/hespla"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+</LinearLayout>
